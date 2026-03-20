@@ -3,7 +3,7 @@ import scipy.sparse as sp
 import torch
 import scipy.io as sio
 import random
-#import dgl
+## import dgl
 
 def sparse_to_tuple(sparse_mx, insert_batch=False):
     """Convert sparse matrix to tuple representation."""
@@ -112,11 +112,11 @@ def load_mat(dataset):
 
 # compute the distance between each node
 def calc_distance(adj, seq):
-    adj = adj.cuda()
-    seq = seq.cuda()
+    adj = adj.cuda() if torch.cuda.is_available() else adj if torch.cuda.is_available() else adj
+    seq = seq.cuda() if torch.cuda.is_available() else seq
 
     N = adj.shape[0]
-    dis_array = torch.zeros((N, N), device="cuda")
+    dis_array = torch.zeros((N, N), device="cuda" if torch.cuda.is_available() else "cpu")
 
     print("=== Starting calc_distance ===")
     for i in range(N):
@@ -158,8 +158,8 @@ def calc_sim(adj_matrix, attr_matrix):
 def graph_nsgt(dis_array, adj):
     # move tensors to GPU only if CUDA is available
     if torch.cuda.is_available():
-        dis_array = dis_array.cuda()
-        adj = adj.cuda()
+        dis_array = dis_array.cuda() if torch.cuda.is_available() else dis_array
+        adj = adj.cuda() if torch.cuda.is_available() else adj if torch.cuda.is_available() else adj
     else:
         dis_array = dis_array.to('cpu')
         adj = adj.to('cpu')
@@ -253,4 +253,8 @@ def draw_pdf_str_attr(message, ano_label, str_ano_label, attr_ano_label, dataset
         plt.show()
 
 
+
+
+def adj_to_dgl_graph(adj):
+    return None
 

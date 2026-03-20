@@ -263,7 +263,7 @@ def neighList_to_edgeList(adj):
     return edge_list
 
 
-from torch_geometric.nn import GINConv
+# from torch_geometric.nn import GINConv
 
 
 class GIN(torch.nn.Module):
