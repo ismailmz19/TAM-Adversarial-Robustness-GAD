@@ -119,7 +119,7 @@ for ax, mk, title, yl in zip(axes, ['auroc','auprc'],
             ax.annotate(label, xy=(x[i]+width/2, max(a,df)+0.01),
                         ha='center', va='bottom', fontsize=8, color=col, fontweight='bold')
         ax.text(0.98, 0.02,
-                '* Reddit: 93% of edges removed by Jaccard\n  (graph collapse artifact, not valid recovery)',
+                '* Reddit: 87.7% of edges removed by Jaccard\n  (graph collapse artifact, not valid recovery)',
                 transform=ax.transAxes, fontsize=7.5,
                 ha='right', va='bottom', color='gray',
                 bbox=dict(boxstyle='round,pad=0.3', facecolor='lightyellow', alpha=0.8))

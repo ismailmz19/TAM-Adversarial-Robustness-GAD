@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project extends [TAM (Truncated Affinity Maximization, NeurIPS 2023)](https://arxiv.org/pdf/2306.00006.pdf) by investigating its adversarial robustness. We design a **relation camouflage attack** that exploits TAM's NSGT mechanism, propose a **Jaccard preprocessing defense**, and provide a structural analysis linking graph clustering coefficient to attack vulnerability.
+This project extends [TAM (Truncated Affinity Maximization, NeurIPS 2023)](https://arxiv.org/pdf/2306.00006.pdf) by investigating its adversarial robustness. We design a **relation camouflage attack** that exploits TAM's NSGT mechanism, propose a **Jaccard preprocessing defense**, and investigate the directional relationship between graph clustering coefficient and attack vulnerability.
 
 ## Key Contributions
 
