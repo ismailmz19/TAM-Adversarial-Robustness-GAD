@@ -1,6 +1,6 @@
-# INSE 6220 Final Project — Adversarial Robustness of TAM for Graph Anomaly Detection
+# ENGR 6991 Final Project — Adversarial Robustness of TAM for Graph Anomaly Detection
 
-**Ismail Mzouri | Concordia University | INSE 6220**
+**Ismail Mzouri | Concordia University | ENGR 6991**
 
 ## Overview
 
