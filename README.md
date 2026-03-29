@@ -10,7 +10,7 @@ This project extends [TAM (Truncated Affinity Maximization, NeurIPS 2023)](https
 
 - **Relation Camouflage Attack**: for each anomalous node, inject k edges to its most cosine-similar normal neighbors, bypassing TAM's NSGT filter
 - **Jaccard Defense**: remove edges with low neighborhood Jaccard similarity before training to filter injected edges
-- **Structural Analysis**: graph clustering coefficient predicts attack vulnerability (Pearson r=0.77)
+- **Structural Analysis**: graph clustering coefficient shows a directional trend with attack vulnerability (Pearson r=0.76, p=0.24, n=4 datasets)
 
 ## Results
 

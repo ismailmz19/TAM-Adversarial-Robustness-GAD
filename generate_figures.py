@@ -108,7 +108,7 @@ fig.savefig(f'{OUT}/fig3_clustering_vs_attack.png', bbox_inches='tight')
 plt.close(); print("Figure 3 saved.")
 
 # ── Figure 4: Jaccard aggressiveness ─────────────────────────────────────────
-total   = {'Amazon':175608,'Facebook':27552,'Reddit':84008,'BlogCatalog':172783}
+total   = {'Amazon':175608,'Facebook':27552,'Reddit':89500,'BlogCatalog':172783}
 removed = {'Amazon':22749, 'Facebook':2175, 'Reddit':78516,'BlogCatalog':155942}
 ratios  = {d: removed[d]/total[d]*100 for d in DATASETS}
 

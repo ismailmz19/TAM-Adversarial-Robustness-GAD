@@ -60,7 +60,7 @@ for d in DATASETS:
         stored = {
             'Amazon':    {'cc':0.6913,'edges':175608,'removed':22749},
             'Facebook':  {'cc':0.5268,'edges':27552, 'removed':2175},
-            'Reddit':    {'cc':0.0000,'edges':84008, 'removed':78516},
+            'Reddit':    {'cc':0.0000,'edges':89500, 'removed':78516},
             'BlogCatalog':{'cc':0.1229,'edges':172783,'removed':155942},
         }
         structural[d] = stored[d]
