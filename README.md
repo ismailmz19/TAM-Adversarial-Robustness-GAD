@@ -63,7 +63,7 @@ Download from [TAM original repo](https://drive.google.com/drive/folders/1qcDBcV
 
 ## Environment
 
-- Python 3.12, PyTorch, CUDA 12.9, NVIDIA RTX 3080 Ti 12GB
+- Python 3.12, PyTorch, CUDA 11.8, NVIDIA RTX 3080 Ti 12GB
 
 ## Base Model
 

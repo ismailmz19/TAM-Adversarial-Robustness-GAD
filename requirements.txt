@@ -1,4 +1,3 @@
-dgl==2.1.0+cu117
 matplotlib==3.9.2
 matplotlib-inline @ file:///work/perseverance-python-buildout/croot/matplotlib-inline_1698864771271/work
 networkx @ file:///croot/networkx_1720002482208/work
