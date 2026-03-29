@@ -109,7 +109,7 @@ plt.close(); print("Figure 3 saved.")
 
 # ── Figure 4: Jaccard aggressiveness ─────────────────────────────────────────
 total   = {'Amazon':175608,'Facebook':27552,'Reddit':89500,'BlogCatalog':172783}
-removed = {'Amazon':22749, 'Facebook':2175, 'Reddit':78516,'BlogCatalog':155942}
+removed = {'Amazon':22749, 'Facebook':2175, 'Reddit':78516,'BlogCatalog':155942}  # Reddit: 78516/89500 = 87.7%
 ratios  = {d: removed[d]/total[d]*100 for d in DATASETS}
 
 fig, axes = plt.subplots(1, 2, figsize=(12, 4.5))
